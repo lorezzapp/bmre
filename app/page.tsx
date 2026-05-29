@@ -126,7 +126,7 @@ export default function Home() {
           <div className="properties-grid">
             <div className="prop-card">
               <div className="prop-img-wrap">
-                <img src="https://images.unsplash.com/photo-1596178065887-8f519c45dffe?w=500&h=400&fit=crop&crop=faces" alt="Villa Toscana" />
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&h=400&fit=crop&q=80" alt="Villa Toscana" />
                 <div className="prop-tag">POPULAIR</div>
                 <div className="prop-fav">❤️</div>
                 <div className="prop-browser-bar">
@@ -249,7 +249,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1532183883981-c0fcf5c90f7b?w=800&q=80&auto=format&fit=crop" alt="Terras" />
+            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e9e8e0?w=800&q=80&auto=format&fit=crop" alt="Terras" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Buitenruimte</div>
@@ -257,7 +257,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=600&q=80&auto=format&fit=crop" alt="Zwembad" />
+            <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=600&q=80&auto=format&fit=crop&crop=entropy" alt="Zwembad" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Zwembad</div>
@@ -300,7 +300,7 @@ export default function Home() {
             </div>
 
             <div className="how-visual">
-              <img src="https://images.unsplash.com/photo-1460925895917-aeb19be489c7?w=600&h=800&fit=crop" alt="Dashboard" />
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=800&fit=crop&q=80" alt="Dashboard" />
               <div className="how-visual-overlay"></div>
               <div className="how-visual-badge">
                 <div className="hvb-label">Live Dashboard</div>
