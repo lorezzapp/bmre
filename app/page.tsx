@@ -225,7 +225,7 @@ export default function Home() {
 
         <div className="gallery-grid">
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1609287326669-33cbb0196302?w=800&q=80&auto=format&fit=crop" alt="Luxe interieur" />
+            <img src="/luxury-interior.png" alt="Luxe interieur" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Moderne luxe</div>
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1600210827513-dba32b20dbaf?w=800&q=80&auto=format&fit=crop" alt="Slaapkamer" />
+            <img src="/bedroom.png" alt="Slaapkamer" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Comfort</div>
@@ -249,7 +249,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1600573472550-8090b5e9e8e0?w=800&q=80&auto=format&fit=crop" alt="Terras" />
+            <img src="/terrace.png" alt="Terras" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Buitenruimte</div>
