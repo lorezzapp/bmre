@@ -404,7 +404,7 @@ nav {
 /* ══════════════════════════════
    ATMOSPHERE GALLERY
 ══════════════════════════════ */
-.gallery-section { padding: 96px 40px 100px; background: var(--bg); min-height: 600px; }
+.gallery-section { padding: 96px 16px 100px; background: var(--bg); min-height: 600px; }
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -713,8 +713,9 @@ footer { background: var(--ink); padding: 64px 0 32px; }
   .hero-actions .btn-glass-light { width: 100%; justify-content: center; }
   .stat-num { font-size: 2rem; }
   .examples-section, .gallery-section, .how-section,
-  .features-section, .testimonials-section, .pricing-section { padding: 56px 0 64px; }
-  .cta-content { padding: 60px 20px; }
+  .features-section, .testimonials-section, .pricing-section { padding: 56px 16px 64px; }
+  .section-inner { padding: 0 16px; }
+  .cta-content { padding: 60px 16px; }
   .cta-title { font-size: clamp(1.6rem, 7vw, 2rem); }
   .cta-actions { flex-direction: column; }
   .cta-actions a { text-align: center; justify-content: center; }
