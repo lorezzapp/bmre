@@ -440,7 +440,7 @@ nav {
 /* ══════════════════════════════
    HOW IT WORKS
 ══════════════════════════════ */
-.how-section { padding: 96px 0 100px; background: var(--white); min-height: 600px; }
+.how-section { padding: 96px 16px 100px; background: var(--white); min-height: 600px; }
 .how-inner {
   display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
 }

@@ -290,47 +290,53 @@ export default function Home() {
       <section className="how-section" id="how">
         <div className="section-inner fade-in-element">
           <div className="s-eyebrow">HOE HET WERKT</div>
-          <h2 className="s-title">Van idee naar boekingen</h2>
+          <h2 className="s-title">Van aanvraag tot online in 3 stappen</h2>
         </div>
 
         <div className="section-inner">
+          <p className="s-sub">Geen technische kennis nodig. Wij regelen alles, jij ontvangt boekingen.</p>
           <div className="how-inner">
             <div className="how-steps">
               <div className="how-step active">
                 <div className="how-step-num">1</div>
                 <div>
-                  <h4 className="how-step-title">Website aanmaken</h4>
-                  <p className="how-step-desc">Kies je template, voeg je foto's toe en maak je website live</p>
+                  <h4 className="how-step-title">Vertel ons over jouw woning</h4>
+                  <p className="how-step-desc">Stuur foto's, een beschrijving en jouw wensen. We stellen de nodige vragen om jouw woning perfect in beeld te brengen.</p>
                 </div>
               </div>
               <div className="how-step">
                 <div className="how-step-num">2</div>
                 <div>
-                  <h4 className="how-step-title">SEO optimaliseren</h4>
-                  <p className="how-step-desc">Wij zorgen voor perfecte zoekmachine optimalisatie</p>
+                  <h4 className="how-step-title">Wij bouwen jouw website</h4>
+                  <p className="how-step-desc">Ons team ontwerpt en ontwikkelt een professionele website op maat — inclusief boekingssysteem en SEO-optimalisatie.</p>
                 </div>
               </div>
               <div className="how-step">
                 <div className="how-step-num">3</div>
                 <div>
-                  <h4 className="how-step-title">Boekingen ontvangen</h4>
-                  <p className="how-step-desc">Boeking worden direct naar je gemaild, geen commissie betalen</p>
+                  <h4 className="how-step-title">Ontvang directe boekingen</h4>
+                  <p className="how-step-desc">Jouw website gaat live op jouw domeinnaam. Gasten boeken direct — zonder commissie aan externe platforms.</p>
                 </div>
               </div>
             </div>
 
             <div className="how-visual">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=800&fit=crop&q=80" alt="Dashboard" />
+                <img src="/mas-provencal.png" alt="Mas Provençal" />
               <div className="how-visual-overlay"></div>
               <div className="how-visual-badge">
-                <div className="hvb-label">Live Dashboard</div>
-                <div className="hvb-title">+12 boekingen deze week</div>
-                <div className="hvb-sub">Totaal €4.200 omzet</div>
+                <div className="hvb-label">LIVE RESULTAAT</div>
+                <div className="hvb-title">Mas Provençal</div>
+                <div className="hvb-sub">Provence, Frankrijk</div>
                 <div className="hvb-stat">
                   <div>
-                    <div className="hvb-stat-num">94%</div>
-                    <div className="hvb-stat-label">Occupancy</div>
+                    <div className="hvb-stat-num">+52%</div>
+                    <div className="hvb-stat-label">Meer boekingen</div>
                   </div>
+                  <div>
+                    <div className="hvb-stat-num">€3.1k</div>
+                    <div className="hvb-stat-label">Bespaardijaar</div>
+                  </div>
+                </div>
                   <div>
                     <div className="hvb-stat-num">4.9</div>
                     <div className="hvb-stat-label">Rating</div>
