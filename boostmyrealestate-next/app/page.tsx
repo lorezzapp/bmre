@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { MobileNav } from "./mobile-nav"
 
 export const metadata: Metadata = {
   title: "BoostMyRealEstate — Websites voor Airbnb\'s die converteren",
@@ -728,7 +727,13 @@ export default function Home() {
 </nav>
 
 
-<MobileNav />
+<div className="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobiel menu">
+  <a href="#examples">Voorbeelden</a>
+  <a href="#how">Hoe het werkt</a>
+  <a href="#features">Features</a>
+  <a href="#pricing">Prijzen</a>
+  <a href="#pricing" className="mob-cta">Gratis starten →</a>
+</div>
 
 
 <section className="hero">
@@ -1219,6 +1224,12 @@ export default function Home() {
         document.querySelector('.nav-hamburger')?.addEventListener('click', function() {
           this.classList.toggle('open');
           document.querySelector('.mobile-nav')?.classList.toggle('open');
+        });
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+          link.addEventListener('click', function() {
+            document.querySelector('.mobile-nav')?.classList.remove('open');
+            document.querySelector('.nav-hamburger')?.classList.remove('open');
+          });
         });
       `}} />
     </>
