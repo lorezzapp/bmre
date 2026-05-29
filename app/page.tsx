@@ -25,28 +25,32 @@ export default function Home() {
       })
     })
 
-    // Fade-in scroll animation
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    }
+    // Fade-in scroll animation - delayed to ensure DOM is ready
+    const setupObserver = () => {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible')
-        }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      }, observerOptions)
+
+      // Observe all fade-in elements
+      const fadeElements = document.querySelectorAll('.fade-in-element')
+      fadeElements.forEach(el => {
+        observer.observe(el)
       })
-    }, observerOptions)
-
-    // Observe all fade-in elements
-    document.querySelectorAll('.fade-in-element').forEach(el => {
-      observer.observe(el)
-    })
-
-    return () => {
-      observer.disconnect()
     }
+
+    // Use requestAnimationFrame to ensure DOM is fully painted
+    requestAnimationFrame(() => {
+      setTimeout(setupObserver, 0)
+    })
   }, [])
 
   return (
