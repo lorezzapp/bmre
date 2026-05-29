@@ -126,7 +126,7 @@ export default function Home() {
           <div className="properties-grid">
             <div className="prop-card">
               <div className="prop-img-wrap">
-                <img src="https://images.unsplash.com/photo-1596178065887-8f519c45dffe?w=500&h=400&fit=crop&crop=faces" alt="Villa Toscana" />
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500&h=400&fit=crop" alt="Villa Toscana" />
                 <div className="prop-tag">POPULAIR</div>
                 <div className="prop-fav">❤️</div>
                 <div className="prop-browser-bar">
@@ -225,7 +225,7 @@ export default function Home() {
 
         <div className="gallery-grid">
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1609287326669-33cbb0196302?w=800&q=80&auto=format&fit=crop" alt="Luxe interieur" />
+            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&q=80" alt="Luxe interieur" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Moderne luxe</div>
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1600210827513-dba32b20dbaf?w=800&q=80&auto=format&fit=crop" alt="Slaapkamer" />
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80" alt="Slaapkamer" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Comfort</div>
@@ -241,7 +241,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&auto=format&fit=crop" alt="Keuken" />
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Keuken" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Gezellig</div>
@@ -249,7 +249,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1532183883981-c0fcf5c90f7b?w=800&q=80&auto=format&fit=crop" alt="Terras" />
+            <img src="https://images.unsplash.com/photo-1589922582559-7d4c878b11e1?w=800&q=80" alt="Terras" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Buitenruimte</div>
@@ -257,7 +257,7 @@ export default function Home() {
             </div>
           </div>
           <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=600&q=80&auto=format&fit=crop" alt="Zwembad" />
+            <img src="https://images.unsplash.com/photo-1596178065887-8f519c45dffe?w=600&q=80" alt="Zwembad" />
             <div className="gallery-overlay"></div>
             <div className="gallery-label">
               <div className="gallery-label-name">Zwembad</div>
