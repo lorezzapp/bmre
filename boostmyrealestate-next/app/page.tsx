@@ -756,21 +756,19 @@ export default function Home() {
     <span></span>
     <span></span>
   </button>
-</nav>
+      </nav>
 
+      <div className="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobiel menu">
+        <a href="#examples">Voorbeelden</a>
+        <a href="#how">Hoe het werkt</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Prijzen</a>
+        <a href="#pricing" className="mob-cta">Gratis starten →</a>
+      </div>
 
-<div className="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobiel menu">
-  <a href="#examples">Voorbeelden</a>
-  <a href="#how">Hoe het werkt</a>
-  <a href="#features">Features</a>
-  <a href="#pricing">Prijzen</a>
-  <a href="#pricing" className="mob-cta">Gratis starten →</a>
-</div>
-
-
-<section className="hero">
-  <div className="hero-photo"></div>
-  <div className="hero-gradient"></div>
+      <section className="hero">
+        <div className="hero-photo"></div>
+        <div className="hero-gradient"></div>
   <div className="hero-content">
     <div className="hero-text">
       <div className="hero-kicker">
@@ -1248,10 +1246,7 @@ export default function Home() {
         <a href="#">Algemene voorwaarden</a>
         <a href="#">Cookies</a>
       </div>
-    </div>
-  </div>
-</footer>
-      </div>
-    </div>
+    </footer>
+    </>
   )
 }
