@@ -717,7 +717,7 @@ export default function Home() {
       .s-title { font-size: clamp(1.7rem, 6vw, 2rem); }
     }
 
-    /* ══════════════════════════════
+    /* ══���═══════════════════════════
        RESPONSIVE — 400px (small phone)
     ══════════════════════════════ */
     @media (max-width: 400px) {
@@ -739,7 +739,7 @@ export default function Home() {
       `}</style>
       <div>
 
-<nav>
+      <nav>
   <a href="#" className="nav-logo">
     <div className="nav-logo-mark">🏠</div>
     BoostMyRealEstate
