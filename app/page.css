@@ -494,11 +494,11 @@ nav {
 /* ══════════════════════════════
    FEATURES
 ══════════════════════════════ */
-.features-section { padding: 96px 0 100px; background: var(--bg); min-height: 500px; }
+.features-section { padding: 96px 40px 100px; background: var(--bg); min-height: 500px; }
 .features-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 1px; background: var(--border);
-  border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
+  gap: 24px; background: transparent;
+  border: none; border-radius: 0; overflow: visible;
   margin-top: 60px;
 }
 .feat-item {
