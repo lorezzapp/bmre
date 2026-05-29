@@ -728,11 +728,11 @@ export default function Home() {
 
 
 <div className="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobiel menu">
-  <a href="#examples" onclick="closeMobileNav()">Voorbeelden</a>
-  <a href="#how" onclick="closeMobileNav()">Hoe het werkt</a>
-  <a href="#features" onclick="closeMobileNav()">Features</a>
-  <a href="#pricing" onclick="closeMobileNav()">Prijzen</a>
-  <a href="#pricing" className="mob-cta" onclick="closeMobileNav()">Gratis starten →</a>
+  <a href="#examples" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Voorbeelden</a>
+  <a href="#how" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Hoe het werkt</a>
+  <a href="#features" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Features</a>
+  <a href="#pricing" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Prijzen</a>
+  <a href="#pricing" className="mob-cta" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Gratis starten →</a>
 </div>
 
 
