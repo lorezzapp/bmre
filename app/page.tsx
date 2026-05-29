@@ -1,9 +1,15 @@
 'use client'
-
-import { useEffect } from 'react'
-import './page.css'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
+  const [showPaymentModal, setShowPaymentModal] = useState(false)
+  const [selectedPlan, setSelectedPlan] = useState<{ name: string; price: number } | null>(null)
+
+  const handleStartPlan = (planName: string, planPrice: number) => {
+    setSelectedPlan({ name: planName, price: planPrice })
+    setShowPaymentModal(true)
+  }
+
   useEffect(() => {
     // Hamburger menu functionality
     const hamburger = document.querySelector('.nav-hamburger')
@@ -467,7 +473,7 @@ export default function Home() {
                   Email support
                 </li>
               </ul>
-              <a href="#" className="p-btn p-btn-outline">Starten</a>
+              <button onClick={() => handleStartPlan('STARTER', 29)} className="p-btn p-btn-outline" style={{ cursor: 'pointer', border: 'none', background: 'transparent' }}>Starten</button>
             </div>
 
             <div className="p-card featured">
@@ -494,7 +500,7 @@ export default function Home() {
                   Custom domain
                 </li>
               </ul>
-              <a href="#" className="p-btn p-btn-dark">Aan de slag</a>
+              <button onClick={() => handleStartPlan('PROFESSIONAL', 79)} className="p-btn p-btn-dark" style={{ cursor: 'pointer', border: 'none', background: 'transparent' }}>Starten</button>
             </div>
 
             <div className="p-card">
@@ -584,6 +590,49 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Payment Modal */}
+      {showPaymentModal && (
+        <div className="payment-modal-overlay" onClick={() => setShowPaymentModal(false)}>
+          <div className="payment-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setShowPaymentModal(false)}>✕</button>
+            <h2>Plan: {selectedPlan?.name}</h2>
+            <p>€{selectedPlan?.price}/maand</p>
+            
+            <div className="payment-steps">
+              <div className="step">
+                <div className="step-number">1</div>
+                <div className="step-content">
+                  <h3>Gegevens invoeren</h3>
+                  <p>Vul je contactgegevens in</p>
+                </div>
+              </div>
+              <div className="step">
+                <div className="step-number">2</div>
+                <div className="step-content">
+                  <h3>Betaling</h3>
+                  <p>Veilige betaling via Stripe</p>
+                </div>
+              </div>
+              <div className="step">
+                <div className="step-number">3</div>
+                <div className="step-content">
+                  <h3>Account aanmaken</h3>
+                  <p>Je account is klaar!</p>
+                </div>
+              </div>
+            </div>
+
+            <form className="payment-form">
+              <input type="email" placeholder="Email adres" required />
+              <input type="text" placeholder="Volledige naam" required />
+              <button type="button" className="btn-stripe" onClick={() => alert('Stripe integratie - checkout starten')}>
+                Doorgaan naar betaling →
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
     </>
   )
 }
