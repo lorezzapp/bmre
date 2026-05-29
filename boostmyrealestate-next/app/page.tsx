@@ -1,11 +1,28 @@
-import type { Metadata } from "next"
+'use client'
 
-export const metadata: Metadata = {
-  title: "BoostMyRealEstate — Websites voor Airbnb\'s die converteren",
-  description: "Professionele websites voor vakantiewoningen die directe boekingen genereren.",
-}
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    const hamburger = document.querySelector('.nav-hamburger')
+    const mobileNav = document.querySelector('.mobile-nav')
+    const mobileLinks = document.querySelectorAll('.mobile-nav a')
+
+    if (hamburger) {
+      hamburger.addEventListener('click', function() {
+        this.classList.toggle('open')
+        mobileNav?.classList.toggle('open')
+      })
+    }
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileNav?.classList.remove('open')
+        hamburger?.classList.remove('open')
+      })
+    })
+  }, [])
+
   return (
     <>
       <style>{`
@@ -598,7 +615,7 @@ export default function Home() {
 
     /* ═══════════════════════��══════
        FOOTER
-    ══════════════════════════════ */
+    ═════���════════════════════════ */
     footer { background: var(--ink); padding: 64px 0 32px; }
     .footer-inner { max-width: 1140px; margin: 0 auto; padding: 0 48px; }
     .footer-top {
@@ -1235,29 +1252,6 @@ export default function Home() {
   </div>
 </footer>
       </div>
-      <script suppressHydrationWarning>{`
-        if (typeof window !== 'undefined') {
-          document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.nav-hamburger');
-            const mobileNav = document.querySelector('.mobile-nav');
-            const mobileLinks = document.querySelectorAll('.mobile-nav a');
-
-            if (hamburger) {
-              hamburger.addEventListener('click', function() {
-                this.classList.toggle('open');
-                mobileNav?.classList.toggle('open');
-              });
-            }
-
-            mobileLinks.forEach(link => {
-              link.addEventListener('click', function() {
-                mobileNav?.classList.remove('open');
-                hamburger?.classList.remove('open');
-              });
-            });
-          });
-        }
-      `}</script>
     </>
   )
 }
