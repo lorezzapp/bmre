@@ -332,12 +332,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="hvb-stat-num">€3.1k</div>
-                    <div className="hvb-stat-label">Bespaardijaar</div>
-                  </div>
-                </div>
-                  <div>
-                    <div className="hvb-stat-num">4.9</div>
-                    <div className="hvb-stat-label">Rating</div>
+                    <div className="hvb-stat-label">Bespaard/jaar</div>
                   </div>
                 </div>
               </div>
