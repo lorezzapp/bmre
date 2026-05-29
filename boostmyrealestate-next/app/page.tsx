@@ -10,14 +10,15 @@ export default function Home() {
     const mobileLinks = document.querySelectorAll('.mobile-nav a')
 
     if (hamburger) {
-      hamburger.addEventListener('click', function() {
-        this.classList.toggle('open')
+      hamburger.addEventListener('click', (e) => {
+        const target = e.target as HTMLElement
+        target.classList.toggle('open')
         mobileNav?.classList.toggle('open')
       })
     }
 
     mobileLinks.forEach(link => {
-      link.addEventListener('click', function() {
+      link.addEventListener('click', () => {
         mobileNav?.classList.remove('open')
         hamburger?.classList.remove('open')
       })
