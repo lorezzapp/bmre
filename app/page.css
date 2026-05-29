@@ -499,7 +499,7 @@ nav {
 /* ══════════════════════════════
    ATMOSPHERE GALLERY
 ══════════════════════════════ */
-.gallery-section { padding: 96px 16px 100px; background: var(--bg); min-height: 600px; }
+.gallery-section { padding: 96px 80px 100px; background: var(--bg); min-height: 600px; }
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -589,7 +589,7 @@ nav {
 /* ══════════════════════════════
    FEATURES
 ══════════════════════════════ */
-.features-section { padding: 96px 40px 100px; background: var(--bg); min-height: 500px; }
+.features-section { padding: 96px 80px 100px; background: var(--bg); min-height: 500px; }
 .features-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 24px; background: transparent;
