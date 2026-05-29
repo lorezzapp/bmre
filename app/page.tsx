@@ -186,7 +186,7 @@ export default function Home() {
 
             <div className="prop-card">
               <div className="prop-img-wrap">
-                <img src="https://images.unsplash.com/photo-1566195992212-5dff3ee5ecbc?w=500&h=400&fit=crop" alt="Alpine Lodge" />
+                <img src="/alpine-lodge.png" alt="Alpine Lodge" />
                 <div className="prop-tag">BERGHUT</div>
                 <div className="prop-fav">🤍</div>
                 <div className="prop-browser-bar">
@@ -254,14 +254,6 @@ export default function Home() {
             <div className="gallery-label">
               <div className="gallery-label-name">Buitenruimte</div>
               <div className="gallery-label-loc">Groningen</div>
-            </div>
-          </div>
-          <div className="gallery-item">
-            <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=600&q=80&auto=format&fit=crop&crop=entropy" alt="Zwembad" />
-            <div className="gallery-overlay"></div>
-            <div className="gallery-label">
-              <div className="gallery-label-name">Zwembad</div>
-              <div className="gallery-label-loc">Maastricht</div>
             </div>
           </div>
         </div>
