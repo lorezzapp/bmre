@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { MobileNav } from "./mobile-nav"
 
 export const metadata: Metadata = {
   title: "BoostMyRealEstate — Websites voor Airbnb\'s die converteren",
@@ -727,13 +728,7 @@ export default function Home() {
 </nav>
 
 
-<div className="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobiel menu">
-  <a href="#examples" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Voorbeelden</a>
-  <a href="#how" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Hoe het werkt</a>
-  <a href="#features" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Features</a>
-  <a href="#pricing" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Prijzen</a>
-  <a href="#pricing" className="mob-cta" onClick={() => { document.querySelector('.mobile-nav')?.classList.remove('open'); document.querySelector('.nav-hamburger')?.classList.remove('open'); }}>Gratis starten →</a>
-</div>
+<MobileNav />
 
 
 <section className="hero">
