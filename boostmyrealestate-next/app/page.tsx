@@ -24,7 +24,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div suppressHydrationWarning>
+    <>
       <style>{`
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1247,6 +1247,6 @@ export default function Home() {
         <a href="#">Cookies</a>
       </div>
     </footer>
-    </div>
+    </>
   )
 }
