@@ -1,12 +1,28 @@
-import type { Metadata } from "next"
-import { MobileNavHandler } from "./mobile-nav-handler"
+'use client'
 
-export const metadata: Metadata = {
-  title: "BoostMyRealEstate — Websites voor Airbnb\'s die converteren",
-  description: "Professionele websites voor vakantiewoningen die directe boekingen genereren.",
-}
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    const hamburger = document.querySelector('.nav-hamburger')
+    const mobileNav = document.querySelector('.mobile-nav')
+    const mobileLinks = document.querySelectorAll('.mobile-nav a')
+
+    if (hamburger) {
+      hamburger.addEventListener('click', function() {
+        this.classList.toggle('open')
+        mobileNav?.classList.toggle('open')
+      })
+    }
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileNav?.classList.remove('open')
+        hamburger?.classList.remove('open')
+      })
+    })
+  }, [])
+
   return (
     <>
       <style>{`
@@ -280,7 +296,7 @@ export default function Home() {
     /* ══════════════════════════════
        EXAMPLES — property cards
     ══════════════════════════════ */
-    .examples-section { padding: 96px 0 100px; background: var(--white); }
+    .examples-section { padding: 96px 0 100px; background: var(--white); min-height: 600px; }
     .examples-header {
       display: flex; align-items: flex-end; justify-content: space-between;
       margin-bottom: 52px; flex-wrap: wrap; gap: 20px;
@@ -381,7 +397,7 @@ export default function Home() {
     /* ══════════════════════════════
        ATMOSPHERE GALLERY
     ══════════════════════════════ */
-    .gallery-section { padding: 96px 0 100px; background: var(--bg); }
+    .gallery-section { padding: 96px 0 100px; background: var(--bg); min-height: 600px; }
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -417,7 +433,7 @@ export default function Home() {
     /* ══════════════════════════════
        HOW IT WORKS
     ══════════════════════════════ */
-    .how-section { padding: 96px 0 100px; background: var(--white); }
+    .how-section { padding: 96px 0 100px; background: var(--white); min-height: 600px; }
     .how-inner {
       display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
     }
@@ -471,7 +487,7 @@ export default function Home() {
     /* ══════════════════════════════
        FEATURES
     ══════════════════════════════ */
-    .features-section { padding: 96px 0 100px; background: var(--bg); }
+    .features-section { padding: 96px 0 100px; background: var(--bg); min-height: 500px; }
     .features-grid {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1px; background: var(--border);
@@ -494,7 +510,7 @@ export default function Home() {
     /* ══════════════════════════════
        TESTIMONIALS
     ══════════════════════════════ */
-    .testimonials-section { padding: 96px 0 100px; background: var(--white); }
+    .testimonials-section { padding: 96px 0 100px; background: var(--white); min-height: 500px; }
     .t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 52px; }
     .t-card {
       background: var(--white); border: 1px solid var(--border);
@@ -516,7 +532,7 @@ export default function Home() {
     /* ══════════════════════════════
        PRICING
     ══════════════════════════════ */
-    .pricing-section { padding: 96px 0 100px; background: var(--bg); }
+    .pricing-section { padding: 96px 0 100px; background: var(--bg); min-height: 700px; }
     .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px; }
     .p-card {
       border: 1px solid var(--border); border-radius: 20px; padding: 36px;
@@ -597,9 +613,9 @@ export default function Home() {
     .cta-sub { font-size: 1.05rem; color: rgba(255,255,255,0.65); margin-top: 16px; max-width: 440px; line-height: 1.65; }
     .cta-actions { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; }
 
-    /* ══════════════════════════════
+    /* ═══════════════════════��══════
        FOOTER
-    ══════════════════════════════ */
+    ═════���════════════════════════ */
     footer { background: var(--ink); padding: 64px 0 32px; }
     .footer-inner { max-width: 1140px; margin: 0 auto; padding: 0 48px; }
     .footer-top {
@@ -1236,7 +1252,6 @@ export default function Home() {
   </div>
 </footer>
       </div>
-      <MobileNavHandler />
     </>
   )
 }
