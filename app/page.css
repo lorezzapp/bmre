@@ -39,7 +39,7 @@ html { scroll-behavior: smooth; }
 
 .fade-in-element {
   opacity: 0;
-  animation: fadeInUp 0.8s ease-out forwards;
+  transform: translateY(30px);
 }
 
 .fade-in-element.visible {
