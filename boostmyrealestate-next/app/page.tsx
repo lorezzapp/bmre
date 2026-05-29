@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { MobileNav } from "./mobile-nav"
 
 export const metadata: Metadata = {
   title: "BoostMyRealEstate — Websites voor Airbnb\'s die converteren",
@@ -727,13 +728,7 @@ export default function Home() {
 </nav>
 
 
-<div className="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobiel menu">
-  <a href="#examples" onclick="closeMobileNav()">Voorbeelden</a>
-  <a href="#how" onclick="closeMobileNav()">Hoe het werkt</a>
-  <a href="#features" onclick="closeMobileNav()">Features</a>
-  <a href="#pricing" onclick="closeMobileNav()">Prijzen</a>
-  <a href="#pricing" className="mob-cta" onclick="closeMobileNav()">Gratis starten →</a>
-</div>
+<MobileNav />
 
 
 <section className="hero">
