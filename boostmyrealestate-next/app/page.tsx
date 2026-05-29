@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { MobileNav } from "./mobile-nav"
 
 export const metadata: Metadata = {
   title: "BoostMyRealEstate — Websites voor Airbnb\'s die converteren",
@@ -42,6 +41,8 @@ export default function Home() {
       padding: 0 56px;
       height: 72px;
       display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+      backdrop-filter: blur(8px);
     }
     .nav-logo {
       font-size: 0.95rem; font-weight: 700; letter-spacing: -0.02em;
@@ -645,7 +646,8 @@ export default function Home() {
        RESPONSIVE — 960px (tablet)
     ══════════════════════════════ */
     @media (max-width: 960px) {
-      nav { padding: 0 20px; }
+      nav { padding: 0 16px; height: 64px; }
+      .nav-logo { font-size: 0.85rem; }
       .nav-pill { display: none; }
       .nav-hamburger { display: flex; }
       .hero-content { padding: 0 20px 40px; flex-direction: column; align-items: flex-start; }
@@ -673,6 +675,11 @@ export default function Home() {
        RESPONSIVE — 600px (mobile)
     ══════════════════════════════ */
     @media (max-width: 600px) {
+      nav { padding: 0 12px; height: 56px; }
+      .nav-cta { display: none; }
+      .mobile-nav { top: 56px; padding: 8px 12px 16px; }
+      .mobile-nav a { padding: 10px 12px; font-size: 0.95rem; }
+      .mobile-nav .mob-cta { padding: 12px; margin-top: 8px; }
       .properties-grid, .t-grid, .pricing-grid, .features-grid { grid-template-columns: 1fr; }
       .gallery-grid { grid-template-columns: 1fr; }
       .hero-title { font-size: clamp(2rem, 8vw, 2.6rem); }
@@ -697,13 +704,20 @@ export default function Home() {
        RESPONSIVE — 400px (small phone)
     ══════════════════════════════ */
     @media (max-width: 400px) {
+      nav { padding: 0 12px; height: 56px; }
+      .nav-logo { font-size: 0.75rem; }
+      .nav-logo-mark { width: 24px; height: 24px; font-size: 12px; }
+      .nav-hamburger { width: 32px; height: 32px; }
+      .nav-hamburger span { width: 14px; }
+      .hero-content { padding: 0 12px 24px; }
       .hero-glass-card { display: none; }
-      .section-inner { padding: 0 16px; }
-      nav { padding: 0 16px; }
-      .nav-logo { font-size: 0.85rem; }
-      .hero-content { padding: 0 16px 32px; }
-      .stats-inner { gap: 16px; }
-      .stat-item { flex: 1 1 100%; }
+      .hero-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+      .section-inner { padding: 0 12px; }
+      .stats-inner { gap: 12px; }
+      .stat-item { flex: 1 1 100%; padding: 0; }
+      .stat-num { font-size: 1.8rem; }
+      .mobile-nav { top: 56px; padding: 6px 12px 12px; }
+      .mobile-nav a { padding: 8px 10px; font-size: 0.9rem; }
     }
       `}</style>
       <div>
@@ -728,7 +742,13 @@ export default function Home() {
 </nav>
 
 
-<MobileNav />
+<div className="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobiel menu">
+  <a href="#examples">Voorbeelden</a>
+  <a href="#how">Hoe het werkt</a>
+  <a href="#features">Features</a>
+  <a href="#pricing">Prijzen</a>
+  <a href="#pricing" className="mob-cta">Gratis starten →</a>
+</div>
 
 
 <section className="hero">
@@ -1219,6 +1239,12 @@ export default function Home() {
         document.querySelector('.nav-hamburger')?.addEventListener('click', function() {
           this.classList.toggle('open');
           document.querySelector('.mobile-nav')?.classList.toggle('open');
+        });
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+          link.addEventListener('click', function() {
+            document.querySelector('.mobile-nav')?.classList.remove('open');
+            document.querySelector('.nav-hamburger')?.classList.remove('open');
+          });
         });
       `}} />
     </>
