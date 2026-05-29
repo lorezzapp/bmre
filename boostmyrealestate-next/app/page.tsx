@@ -296,7 +296,7 @@ export default function Home() {
     /* ══════════════════════════════
        EXAMPLES — property cards
     ══════════════════════════════ */
-    .examples-section { padding: 96px 0 100px; background: var(--white); }
+    .examples-section { padding: 96px 0 100px; background: var(--white); min-height: 600px; }
     .examples-header {
       display: flex; align-items: flex-end; justify-content: space-between;
       margin-bottom: 52px; flex-wrap: wrap; gap: 20px;
@@ -397,7 +397,7 @@ export default function Home() {
     /* ══════════════════════════════
        ATMOSPHERE GALLERY
     ══════════════════════════════ */
-    .gallery-section { padding: 96px 0 100px; background: var(--bg); }
+    .gallery-section { padding: 96px 0 100px; background: var(--bg); min-height: 600px; }
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -433,7 +433,7 @@ export default function Home() {
     /* ══════════════════════════════
        HOW IT WORKS
     ══════════════════════════════ */
-    .how-section { padding: 96px 0 100px; background: var(--white); }
+    .how-section { padding: 96px 0 100px; background: var(--white); min-height: 600px; }
     .how-inner {
       display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
     }
@@ -487,7 +487,7 @@ export default function Home() {
     /* ══════════════════════════════
        FEATURES
     ══════════════════════════════ */
-    .features-section { padding: 96px 0 100px; background: var(--bg); }
+    .features-section { padding: 96px 0 100px; background: var(--bg); min-height: 500px; }
     .features-grid {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 1px; background: var(--border);
@@ -510,7 +510,7 @@ export default function Home() {
     /* ══════════════════════════════
        TESTIMONIALS
     ══════════════════════════════ */
-    .testimonials-section { padding: 96px 0 100px; background: var(--white); }
+    .testimonials-section { padding: 96px 0 100px; background: var(--white); min-height: 500px; }
     .t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 52px; }
     .t-card {
       background: var(--white); border: 1px solid var(--border);
@@ -532,7 +532,7 @@ export default function Home() {
     /* ══════════════════════════════
        PRICING
     ══════════════════════════════ */
-    .pricing-section { padding: 96px 0 100px; background: var(--bg); }
+    .pricing-section { padding: 96px 0 100px; background: var(--bg); min-height: 700px; }
     .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px; }
     .p-card {
       border: 1px solid var(--border); border-radius: 20px; padding: 36px;
