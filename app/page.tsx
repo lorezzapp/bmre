@@ -5,6 +5,7 @@ import './page.css'
 
 export default function Home() {
   useEffect(() => {
+    // Hamburger menu functionality
     const hamburger = document.querySelector('.nav-hamburger')
     const mobileNav = document.querySelector('.mobile-nav')
     const mobileLinks = document.querySelectorAll('.mobile-nav a')
@@ -23,6 +24,29 @@ export default function Home() {
         hamburger?.classList.remove('open')
       })
     })
+
+    // Fade-in scroll animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+        }
+      })
+    }, observerOptions)
+
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in-element').forEach(el => {
+      observer.observe(el)
+    })
+
+    return () => {
+      observer.disconnect()
+    }
   }, [])
 
   return (
@@ -110,7 +134,7 @@ export default function Home() {
       </section>
 
       <section className="examples-section" id="examples">
-        <div className="section-inner">
+        <div className="section-inner fade-in-element">
           <div className="examples-header">
             <div>
               <div className="s-eyebrow">VOORBEELDEN</div>
@@ -218,7 +242,7 @@ export default function Home() {
       </section>
 
       <section className="gallery-section" id="gallery">
-        <div className="section-inner">
+        <div className="section-inner fade-in-element">
           <div className="s-eyebrow">SFEER</div>
           <h2 className="s-title">Onze beste shots</h2>
         </div>
@@ -260,7 +284,7 @@ export default function Home() {
       </section>
 
       <section className="how-section" id="how">
-        <div className="section-inner">
+        <div className="section-inner fade-in-element">
           <div className="s-eyebrow">HOE HET WERKT</div>
           <h2 className="s-title">Van idee naar boekingen</h2>
         </div>
@@ -315,7 +339,7 @@ export default function Home() {
       </section>
 
       <section className="features-section" id="features">
-        <div className="section-inner">
+        <div className="section-inner fade-in-element">
           <div className="s-eyebrow">FEATURES</div>
           <h2 className="s-title">Alles wat je nodig hebt</h2>
         </div>
@@ -355,7 +379,7 @@ export default function Home() {
       </section>
 
       <section className="testimonials-section" id="testimonials">
-        <div className="section-inner">
+        <div className="section-inner fade-in-element">
           <div className="s-eyebrow">GETUIGENISSEN</div>
           <h2 className="s-title">Wat ons klanten zeggen</h2>
         </div>
