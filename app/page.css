@@ -190,7 +190,7 @@ nav {
 }
 .hero-title {
   font-size: clamp(2.4rem, 5.5vw, 4.2rem);
-  font-weight: 800; line-height: 1.04; letter-spacing: -0.04em;
+  font-weight: 800; line-height: 1.04; letter-spacing: -0.02em;
   color: #fff;
 }
 .hero-title em { font-style: italic; font-weight: 400; }
@@ -236,7 +236,7 @@ nav {
 }
 .hgc-stat { margin-bottom: 14px; }
 .hgc-num {
-  font-size: 1.9rem; font-weight: 800; color: #fff; letter-spacing: -0.04em; line-height: 1;
+  font-size: 1.9rem; font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1;
 }
 .hgc-desc { font-size: 0.78rem; color: rgba(255,255,255,0.6); margin-top: 3px; }
 .hgc-divider { height: 1px; background: rgba(255,255,255,0.12); margin: 16px 0; }
@@ -269,7 +269,7 @@ nav {
 .stat-item:first-child { padding-left: 0; }
 .stat-item:last-child { border-right: none; }
 .stat-num {
-  font-size: 2.4rem; font-weight: 800; letter-spacing: -0.05em;
+  font-size: 2.4rem; font-weight: 800; letter-spacing: -0.02em;
   color: var(--ink); line-height: 1;
 }
 .stat-num sup { font-size: 1.2rem; vertical-align: super; margin-left: 2px; }
@@ -292,7 +292,7 @@ nav {
 }
 .s-title {
   font-size: clamp(1.9rem, 3.5vw, 2.75rem);
-  font-weight: 800; letter-spacing: -0.04em; line-height: 1.1;
+  font-weight: 800; letter-spacing: -0.02em; line-height: 1.1;
   color: var(--ink);
 }
 .s-sub {
@@ -557,7 +557,7 @@ nav {
 }
 .p-card.featured .p-plan { color: rgba(255,255,255,0.45); }
 .p-price {
-  font-size: 2.6rem; font-weight: 800; letter-spacing: -0.05em;
+  font-size: 2.6rem; font-weight: 800; letter-spacing: -0.02em;
   color: var(--ink); line-height: 1;
 }
 .p-price-unit { font-size: 0.9rem; font-weight: 400; color: var(--ink-3); vertical-align: middle; }
@@ -615,7 +615,7 @@ nav {
 }
 .cta-title {
   font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 800;
-  letter-spacing: -0.04em; color: #fff; line-height: 1.1; max-width: 560px;
+  letter-spacing: -0.02em; color: #fff; line-height: 1.1; max-width: 560px;
 }
 .cta-sub { font-size: 1.05rem; color: rgba(255,255,255,0.65); margin-top: 16px; max-width: 440px; line-height: 1.65; }
 .cta-actions { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; }
