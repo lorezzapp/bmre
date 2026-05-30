@@ -592,12 +592,12 @@ nav {
 .features-section { padding: 96px 80px 100px; background: var(--bg); min-height: 500px; }
 .features-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 24px; background: transparent;
-  border: none; border-radius: 0; overflow: visible;
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
   margin-top: 60px;
 }
 .feat-item {
-  background: var(--bg); padding: 36px 30px;
+  background: var(--white); padding: 36px 30px;
   transition: background 0.2s;
 }
 .feat-item:hover { background: var(--bg-2); }
@@ -831,7 +831,7 @@ footer { background: var(--ink); padding: 64px 0 32px; }
   .nav-hamburger { width: 32px; height: 32px; }
   .nav-hamburger span { width: 14px; }
   .hero { height: auto; min-height: 480px; }
-  .hero-content { padding: 60px 12px 60px; align-items: flex-start; }
+  .hero-content { padding: 60px 24px 60px; align-items: flex-start; }
   .hero-kicker { margin-bottom: 8px; }
   .hero-glass-card { display: none; }
   .hero-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
