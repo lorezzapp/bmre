@@ -829,9 +829,9 @@ footer { background: var(--ink); padding: 64px 0 32px; }
   .nav-logo-mark { width: 24px; height: 24px; font-size: 12px; }
   .nav-hamburger { width: 32px; height: 32px; }
   .nav-hamburger span { width: 14px; }
-  .hero { min-height: 340px; }
-  .hero-content { padding: 8px 12px 20px; align-items: flex-start; }
-  .hero-kicker { margin-bottom: 8px; }
+  .hero { min-height: 320px; }
+  .hero-content { padding: 0 12px 20px; align-items: flex-start; }
+  .hero-kicker { margin-bottom: 6px; }
   .hero-glass-card { display: none; }
   .hero-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
   .section-inner { padding: 0 12px; }
