@@ -174,6 +174,12 @@ nav {
   display: flex; align-items: center; justify-content: center;
   font-size: 14px;
 }
+.nav-logo-img {
+  width: 28px; height: 28px; object-fit: contain;
+}
+.footer-logo-img {
+  width: 32px; height: 32px; object-fit: contain;
+}
 .nav-pill {
   display: flex; align-items: center; gap: 2px;
   background: rgba(255,255,255,0.12);

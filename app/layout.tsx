@@ -3,6 +3,11 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "BoostMyRealEstate — Websites voor Airbnb's die converteren",
   description: "Professionele websites voor vakantiewoningen die directe boekingen genereren.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 }
 
 export default function RootLayout({
