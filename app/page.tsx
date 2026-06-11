@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <nav>
         <a href="#" className="nav-logo">
-          <div className="nav-logo-mark">🏠</div>
+          <img src="/logo.png" alt="BoostMyRealEstate" className="nav-logo-img" />
           BoostMyRealEstate
         </a>
         <div className="nav-pill">
@@ -538,7 +538,7 @@ export default function Home() {
           <div className="footer-top">
             <div>
               <a href="#" className="footer-logo">
-                <div className="footer-logo-mark">🏠</div>
+                <img src="/logo.png" alt="BoostMyRealEstate" className="footer-logo-img" />
                 BoostMyRealEstate
               </a>
               <p className="footer-tagline">De toekomst van vakantiewoningen is hier. Bouw jouw eigen platform.</p>
