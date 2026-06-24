@@ -91,11 +91,11 @@ export default function Home() {
               Websites voor vakantieverhuurders
             </div>
             <h1 className="hero-title">
-              Jouw Airbnb verdient<br />
-              een <em>eigen</em> website
+              Vakantiehuis Boeken Zonder Airbnb?<br />
+              Ontvang Directe Boekingen Via Je <em>Eigen</em> Website
             </h1>
             <p className="hero-sub">
-              Professionele websites voor vakantiewoningen die directe boekingen genereren — zonder commissie aan Airbnb of Booking.com.
+              Honderden verhuurders verhuren hun <strong>vakantiehuis zonder Airbnb</strong> of Booking.com — en besparen gemiddeld €3.100 per jaar aan commissie. Wij bouwen jouw eigen boekingswebsite, volledig klaar om gasten direct te laten boeken.
             </p>
             <div className="hero-actions">
               <a href="#pricing" className="btn-white">Start jouw website →</a>
@@ -424,6 +424,47 @@ export default function Home() {
                   <div className="t-role">Host Alpine Lodge</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="faq-section">
+        <div className="container">
+          <div className="section-header">
+            <div className="section-kicker">VEELGESTELDE VRAGEN</div>
+            <h2>Alles wat je wilt weten over directe boekingen</h2>
+          </div>
+
+          <div className="faq-grid">
+            <div className="faq-item">
+              <h3>Kan ik mijn vakantiehuis verhuren zonder Airbnb?</h3>
+              <p>Ja. Met een eigen professionele website trekt je vakantiehuis gasten aan via Google. Gasten die actief zoeken naar "vakantiehuis huren" in jouw regio vinden jou direct — je hebt geen Airbnb of Booking.com nodig.</p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Hoe vinden gasten mijn vakantiehuis op Google?</h3>
+              <p>BoostMyRealEstate optimaliseert jouw website voor zoektermen die jouw toekomstige gasten gebruiken, zoals "vakantiehuis huren [bestemming]" of "vakantiehuisje boeken [regio]". Zo sta je bovenaan de zoekresultaten.</p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Wat kost het om een eigen boekingswebsite te hebben?</h3>
+              <p>Je begint al vanaf €29 per maand. De gemiddelde besparing op Airbnb-commissie is €3.100 per jaar — je website betaalt zichzelf dus binnen een maand terug.</p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Hoe snel kan ik directe boekingen ontvangen?</h3>
+              <p>De meeste klanten ontvangen hun eerste directe boeking binnen 30 dagen na lancering. Onze SEO-optimalisatie zorgt dat je website snel gevonden wordt.</p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Werkt dit ook als ik maar één vakantiehuis verhuur?</h3>
+              <p>Absoluut. Ons Starter-pakket (€29/mnd) is speciaal ontworpen voor eigenaren van één vakantiehuis die willen stoppen met commissie betalen aan platforms.</p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Kan ik mijn vakantiehuis ook op Airbnb houden?</h3>
+              <p>Ja. Veel klanten gebruiken beide kanalen. Je eigen website geeft je meer controle en lagere kosten, terwijl Airbnb kan blijven als aanvullend boekingskanaal.</p>
             </div>
           </div>
         </div>
