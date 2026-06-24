@@ -4,9 +4,9 @@ export const metadata: Metadata = {
   title: "BoostMyRealEstate — Websites voor Airbnb's die converteren",
   description: "Professionele websites voor vakantiewoningen die directe boekingen genereren.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 }
 
